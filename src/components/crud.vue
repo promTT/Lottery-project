@@ -30,8 +30,11 @@ export default {
   name: "crud",
   data() {
     return {
-      studentName: ["soon", "coming soon", "coming soon", "coming soon"],
       number: "",
+      last2Num: "",
+      first2Num: "",
+      last3Num: "",
+      first3Num: "",
       color: "",
     };
   },
@@ -54,7 +57,10 @@ export default {
         this.number = Math.floor(Math.random() * (999999 + 1) );
         console.log("random");
       }
-
+      this.last2Num = this.number.slice(4, 6);
+      this.first2Num = this.number.slice(0, 2);
+      this.last3Num = this.number.slice(3, 6);
+      this.first3Num = this.number.slice(0, 3);
     },
   },
 };
