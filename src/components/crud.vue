@@ -15,10 +15,11 @@
     </div>
     <ul class="list-group">
       <li class="list-group-item row" :style="{ color }">เลขที่คุณได้คือ: {{ number }}</li>
-      <div class="row">
-      <li class="list-group-item col" v-for="(item, index) in studentName" :key="index" :style="{ color }">
-        {{ item }}
-      </li>
+      <div class="row" >
+        <li :style="{ color }" class="list-group-item col">{{last2Num}}</li>
+        <li :style="{ color }" class="list-group-item col">{{first2Num}}</li>
+        <li :style="{ color }" class="list-group-item col">{{last3Num}}</li>
+        <li :style="{ color }" class="list-group-item col">{{first3Num}}</li>
       </div>
     </ul>
   </div>
